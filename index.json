@@ -1,0 +1,54 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "urn": "urn:solid:"
+  },
+  "@id": "#registry",
+  "@type": "schema:ItemList",
+  "schema:name": "solid-apps registry",
+  "schema:description": "A curated, community-submitted directory of Solid apps (rail-level UIs) and panes (per-subject renderers). Apps follow the hub-pod app interface (meta + render); panes follow SLIP-48. Hosts (hub, pilot, others) read this list to surface installable entries to users.",
+  "schema:url": "https://solid-apps.github.io/registry/",
+  "schema:itemListElement": [
+    {
+      "@type": "urn:App",
+      "@id": "https://solid-apps.github.io/hub/directory/pad.js",
+      "schema:name": "Pad",
+      "schema:description": "A markdown scratchpad. Auto-saves to localStorage.",
+      "schema:icon": "📝",
+      "schema:author": "hub-pod",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/solid-apps/hub"
+    },
+    {
+      "@type": "urn:App",
+      "@id": "https://solid-apps.github.io/hub/directory/sticky.js",
+      "schema:name": "Sticky",
+      "schema:description": "Coloured sticky notes you can drag around. Persists to localStorage.",
+      "schema:icon": "📌",
+      "schema:author": "hub-pod",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/solid-apps/hub"
+    },
+    {
+      "@type": "urn:App",
+      "@id": "https://solid-apps.github.io/hub/directory/clock.js",
+      "schema:name": "Clock",
+      "schema:description": "Live clocks for multiple time zones.",
+      "schema:icon": "🕒",
+      "schema:author": "hub-pod",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/solid-apps/hub"
+    },
+    {
+      "@type": "urn:Pane",
+      "@id": "https://solid-apps.github.io/pilot/tracker-pane.js",
+      "schema:name": "Pilot Tracker",
+      "schema:description": "Renders wf:Tracker resources as a kanban-style task list.",
+      "schema:icon": "✅",
+      "schema:author": "solid-apps",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/solid-apps/pilot",
+      "urn:forClass": "http://www.w3.org/2005/01/wf/flow#Tracker"
+    }
+  ]
+}

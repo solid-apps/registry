@@ -1,0 +1,40 @@
+name: validate
+
+on:
+  pull_request:
+    paths: ["index.json"]
+  push:
+    branches: [gh-pages]
+    paths: ["index.json"]
+
+jobs:
+  json:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: JSON syntax + required fields
+        run: |
+          node <<'JS'
+          const fs = require('fs');
+          const doc = JSON.parse(fs.readFileSync('index.json', 'utf8'));
+          const items = doc['schema:itemListElement'];
+          if (!Array.isArray(items)) { console.error('schema:itemListElement must be an array'); process.exit(1); }
+          const REQUIRED = ['@type', '@id', 'schema:name', 'schema:description', 'schema:icon', 'schema:author', 'schema:license', 'schema:codeRepository'];
+          let bad = 0;
+          const seenIds = new Set();
+          for (const [i, e] of items.entries()) {
+            for (const k of REQUIRED) {
+              if (!e[k]) { console.error(`entry ${i}: missing ${k}`); bad++; }
+            }
+            if (e['@type'] && !['urn:App', 'urn:Pane'].includes(e['@type'])) {
+              console.error(`entry ${i}: @type must be urn:App or urn:Pane (got ${e['@type']})`); bad++;
+            }
+            if (e['@id']) {
+              try { new URL(e['@id']); } catch { console.error(`entry ${i}: @id is not a valid URL`); bad++; }
+              if (seenIds.has(e['@id'])) { console.error(`entry ${i}: duplicate @id ${e['@id']}`); bad++; }
+              seenIds.add(e['@id']);
+            }
+          }
+          if (bad) process.exit(1);
+          console.log(`OK — ${items.length} entries`);
+          JS
