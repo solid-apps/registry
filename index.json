@@ -40,6 +40,46 @@
       "schema:codeRepository": "https://github.com/solid-apps/hub"
     },
     {
+      "@type": "urn:App",
+      "@id": "https://solid-apps.github.io/hub/directory/pomodoro.js",
+      "schema:name": "Pomodoro",
+      "schema:description": "Work/break timer with audio cue. 25/5 default, configurable.",
+      "schema:icon": "⏲",
+      "schema:author": "hub-pod",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/solid-apps/hub"
+    },
+    {
+      "@type": "urn:App",
+      "@id": "https://solid-apps.github.io/hub/directory/calculator.js",
+      "schema:name": "Calculator",
+      "schema:description": "Basic 4-function calculator with keyboard input.",
+      "schema:icon": "🧮",
+      "schema:author": "hub-pod",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/solid-apps/hub"
+    },
+    {
+      "@type": "urn:App",
+      "@id": "https://solid-apps.github.io/hub/directory/markdown.js",
+      "schema:name": "Markdown",
+      "schema:description": "Live markdown editor with split-view preview.",
+      "schema:icon": "✍️",
+      "schema:author": "hub-pod",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/solid-apps/hub"
+    },
+    {
+      "@type": "urn:App",
+      "@id": "https://solid-apps.github.io/hub/directory/draw.js",
+      "schema:name": "Drawing pad",
+      "schema:description": "Canvas sketch pad with color, brush size, and Save PNG.",
+      "schema:icon": "🖌",
+      "schema:author": "hub-pod",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/solid-apps/hub"
+    },
+    {
       "@type": "urn:Pane",
       "@id": "https://solid-apps.github.io/pilot/tracker-pane.js",
       "schema:name": "Pilot Tracker",
