@@ -100,6 +100,16 @@
       "schema:license": "AGPL-3.0",
       "schema:codeRepository": "https://github.com/solid-apps/hub",
       "urn:forClass": "http://www.w3.org/ns/ldp#Container"
+    },
+    {
+      "@type": "urn:App",
+      "@id": "https://solid-apps.github.io/hub/directory/motd.js",
+      "schema:name": "Today (MOTD)",
+      "schema:description": "Live message + picture of the day. PUTs to /public/motd.jsonld; every open window cross-fades to changes via solid-0.1 WebSocket notifications.",
+      "schema:icon": "🌅",
+      "schema:author": "hub-pod",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/solid-apps/hub"
     }
   ]
 }
