@@ -89,6 +89,17 @@
       "schema:license": "AGPL-3.0",
       "schema:codeRepository": "https://github.com/solid-apps/pilot",
       "urn:forClass": "http://www.w3.org/2005/01/wf/flow#Tracker"
+    },
+    {
+      "@type": "urn:Pane",
+      "@id": "https://solid-apps.github.io/hub/directory/table-explorer.js",
+      "schema:name": "Table Explorer",
+      "schema:description": "Table-style LDP container browser with Name / Type / Size / Modified columns.",
+      "schema:icon": "📋",
+      "schema:author": "hub-pod",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/solid-apps/hub",
+      "urn:forClass": "http://www.w3.org/ns/ldp#Container"
     }
   ]
 }
