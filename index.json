@@ -110,6 +110,17 @@
       "schema:author": "hub-pod",
       "schema:license": "AGPL-3.0",
       "schema:codeRepository": "https://github.com/solid-apps/hub"
+    },
+    {
+      "@type": "urn:Pane",
+      "@id": "https://solid-apps.github.io/registry/panes/note-pane.js",
+      "schema:name": "Note",
+      "schema:description": "Edit schema:TextDocument / Article / CreativeWork notes — title + markdown body, autosave, delete. Renders in hub and the desktops.",
+      "schema:icon": "📄",
+      "schema:author": "solid-apps",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/solid-apps/registry",
+      "urn:forClass": "http://schema.org/TextDocument"
     }
   ]
 }
