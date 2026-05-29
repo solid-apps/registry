@@ -125,6 +125,62 @@
         "http://schema.org/Article",
         "http://schema.org/CreativeWork"
       ]
+    },
+    {
+      "@type": "urn:Pane",
+      "@id": "https://solid-apps.github.io/hub/panes/event.js",
+      "schema:name": "Event",
+      "schema:description": "Render an iCal Vevent / schema:Event — details, time, location.",
+      "schema:icon": "📅",
+      "schema:author": "solid-apps",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/solid-apps/hub",
+      "urn:forClass": [
+        "http://www.w3.org/2002/12/cal/ical#Vcalendar",
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://schema.org/Event"
+      ]
+    },
+    {
+      "@type": "urn:Pane",
+      "@id": "https://solid-apps.github.io/hub/panes/list.js",
+      "schema:name": "List",
+      "schema:description": "Render a schema:ItemList as a checkable todo list — add/complete/edit items.",
+      "schema:icon": "✅",
+      "schema:author": "solid-apps",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/solid-apps/hub",
+      "urn:forClass": [
+        "http://schema.org/ItemList",
+        "https://schema.org/ItemList"
+      ]
+    },
+    {
+      "@type": "urn:Pane",
+      "@id": "https://solid-apps.github.io/hub/panes/bookmark.js",
+      "schema:name": "Bookmark",
+      "schema:description": "Render a bookmark:Bookmark — title, link, tags.",
+      "schema:icon": "🔖",
+      "schema:author": "solid-apps",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/solid-apps/hub",
+      "urn:forClass": [
+        "http://www.w3.org/2002/01/bookmark#Bookmark"
+      ]
+    },
+    {
+      "@type": "urn:Pane",
+      "@id": "https://solid-apps.github.io/hub/panes/post.js",
+      "schema:name": "Post",
+      "schema:description": "Render an ActivityStreams Note (social post) — author, content, date.",
+      "schema:icon": "💬",
+      "schema:author": "solid-apps",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/solid-apps/hub",
+      "urn:forClass": [
+        "https://www.w3.org/ns/activitystreams#Note",
+        "http://www.w3.org/ns/activitystreams#Note"
+      ]
     }
   ]
 }
