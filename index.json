@@ -120,7 +120,11 @@
       "schema:author": "solid-apps",
       "schema:license": "AGPL-3.0",
       "schema:codeRepository": "https://github.com/solid-apps/registry",
-      "urn:forClass": "http://schema.org/TextDocument"
+      "urn:forClass": [
+        "http://schema.org/TextDocument",
+        "http://schema.org/Article",
+        "http://schema.org/CreativeWork"
+      ]
     }
   ]
 }
