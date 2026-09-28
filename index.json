@@ -181,6 +181,16 @@
         "https://www.w3.org/ns/activitystreams#Note",
         "http://www.w3.org/ns/activitystreams#Note"
       ]
+    },
+    {
+      "@type": "urn:App",
+      "@id": "https://bitcoin-blake.github.io/reef/reef-app.js",
+      "schema:name": "Reef",
+      "schema:description": "A Knots-style Bitcoin node in a tab: the BLAKE2b testnet4 synced from a verified UTXO snapshot and every block validated in the page, with the familiar Overview, Send, Receive, Transactions and Node window (console included).",
+      "schema:icon": "🪢",
+      "schema:author": "melvincarvalho",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/bitcoin-blake/reef"
     }
   ]
 }
