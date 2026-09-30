@@ -181,6 +181,46 @@
         "https://www.w3.org/ns/activitystreams#Note",
         "http://www.w3.org/ns/activitystreams#Note"
       ]
+    },
+    {
+      "@type": "urn:App",
+      "@id": "https://bitcoin-blake.github.io/reef/reef-app.js",
+      "schema:name": "Reef",
+      "schema:description": "A Knots-style Bitcoin node in a tab: the BLAKE2b testnet4 synced from a verified UTXO snapshot and every block validated in the page, with the familiar Overview, Send, Receive, Transactions and Node window (console included).",
+      "schema:icon": "🪢",
+      "schema:author": "melvincarvalho",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/bitcoin-blake/reef"
+    },
+    {
+      "@type": "urn:App",
+      "@id": "https://bitcoin-blake.github.io/bight/bight-app.js",
+      "schema:name": "Bight",
+      "schema:description": "A mempool monitor in a tab, in the mempool.space shape: every transaction validated by the tab’s own node, and the next block is the one this tab would build. BLAKE2b testnet4.",
+      "schema:icon": "🌊",
+      "schema:author": "melvincarvalho",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/bitcoin-blake/bight"
+    },
+    {
+      "@type": "urn:App",
+      "@id": "https://bitcoin-blake.github.io/winch/winch-app.js",
+      "schema:name": "Winch",
+      "schema:description": "Solo mining in a tab: the block built and checked by the tab’s own node from its own mempool, hashed in the tab in testnet’s twenty-minute window, and handed to the chain.",
+      "schema:icon": "⚙️",
+      "schema:author": "melvincarvalho",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/bitcoin-blake/winch"
+    },
+    {
+      "@type": "urn:App",
+      "@id": "https://bitcoin-blake.github.io/hitch/hitch-app.js",
+      "schema:name": "Hitch",
+      "schema:description": "Payment channels in a tab, Lightning-shaped: a 2-of-2 funding output, revocable commitments, penalties; funded, watched and settled by the tab’s own node.",
+      "schema:icon": "🔗",
+      "schema:author": "melvincarvalho",
+      "schema:license": "AGPL-3.0",
+      "schema:codeRepository": "https://github.com/bitcoin-blake/hitch"
     }
   ]
 }
